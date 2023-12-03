@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr"> 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My First Website Bulgaria</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&family=Quicksand&family=Work+Sans&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <meta name="description" content="A simple website">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css"/>
+  <link rel="stylesheet" href="Bulgaria.css">
+  
+</head>
+<body>
+ <header>
+ <a href="Bulgaria.html" class="brand">Travel</a>
+   <div class="menu-btn active"></div>
+   <div class="navigation active">
+    <div class="navigation-item">
+      <a href="HomeB.html">Home</a>
+      <a href="About.html">Countryside</a>
+      <a href="Culture.html">Culture</a>
+      <a href="Tradition.html">Traditions</a>
+      <a href="contact.html">Contact</a>
+        </div>
+    </div>
+ </header>
+      
+     <section class="home">
+      <video class="video-slide active" src="Boat.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="Boat.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="Boat.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="Boat.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="Boat.mp4" autoplay muted loop></video>
+
+      <div class="content active">
+        <h2>Wonderful.<br><span>Bulgaria</span></h2>
+        <p>Bulgaria is a country with picturesque landscapes, along the coast of Black Sea. With mountains and rivers on one side and sun-kissed beaches and azure sea on the other, Bulgaria boasts of beautiful cities and resort towns, which fascinate each and every traveler with their own charm and aura.</p>
+        <a href="#">Read More</a>
+    </div>
+     <div class="content">
+      <h2>Black Sea.<br><span>Sunshine</span></h2>
+      <p>Bulgaria is known for its beautiful beaches by the Black Sea, ancient historic ruins, and intricate religious landmarks, as well as stunning nature spots including Vitosha Mountain and Rila Lakes.</p>
+      <a href="Beaches.html">Read More</a>
+    </div>
+    <div class="content">
+      <h2>Lovely food.<br><span>Enjoy</span></h2>
+      <p>Bulgarian food is delicious, hearty and truly satisfying.</p>
+      <a href="Food.html">Read More</a>
+    </div>
+    <div class="content">
+      <h2>Bulgarian rose.<br><span>Aroma</span></h2>
+      <p>Bulgaria is one of the biggest rose-oil producers in the world and a country that has been closely related to the beautiful flower for centuries.</p>
+      <a href="Roses.html">Read More</a>
+    </div>
+    <div class="content">
+      <h2>Ski Resorts.<br><span>Snowing</span></h2>
+      <p>Bansko, Borovets and Pamporovo are the three majour resorts in Bulgaria. However several hidden gems also provide beautiful mountain scenery and basic ski equipment.</p>
+      <a href="Ski.html">Read More</a>
+    </div> 
+
+    <div class="media">
+      <ul>
+         <li><a style="color: white"  href="  https://twitter.com/Bulgaria"> <i class="fa-brands fa-square-twitter"></i></a></li> 
+         <li><a style="color:white" href="https://www.facebook.com/groups/533171097219303/?hoisted_section_header_type=recently_seen&multi_permalinks=1535475850322151">  <i class="fa-brands fa-facebook"></i></a></li> 
+         <li><a style="color: white" href="https://www.youtube.com/watch?v=HDrCvMnY6p0"> <i class="fa-brands fa-youtube"></i></a></li> 
+      </ul>
+    </div>
+    
+    <div class="slider-navigation">
+      <div class="nav-btn active"></div>
+      <div class="nav-btn"></div>
+      <div class="nav-btn"></div>
+      <div class="nav-btn"></div>
+      <div class="nav-btn"></div>
+
+    </div>
+ </section>
+
+     <script type="text/javascript">
+      //Javascript of responsive navigation menu 
+      const menuBtn = document.querySelector(".menu-btn");
+      const navigation = document.querySelector(".navigation");
+      
+      menuBtn.addEventListener("click", () => {
+        menuBtn.classList.toggle("active");
+        navigation.classList.toggle("active");
+      });
+
+      //Javascript for video slider navigation
+const btns = document.querySelectorAll(".nav-btn");
+const slides = document.querySelectorAll(".video-slide");
+const contents = document.querySelectorAll(".content");
+
+
+var sliderNav = function(manual){
+  btns.forEach((btn) => {
+  btn.classList.remove("active");
+});
+slides.forEach((slide) => {
+  slide.classList.remove("active");
+});
+contents.forEach((content) => {
+  content.classList.remove("active");
+});
+
+  btns[manual].classList.add("active");
+  slides[manual].classList.add("active");
+  contents[manual].classList.add("active");
+}
+
+btns.forEach((btn, i) => {
+btn.addEventListener("click", () => {
+  sliderNav(i);
+});
+
+});
+
+</script>
+
+
+</body>
+</html>

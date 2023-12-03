@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr"> 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Bulgaria</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&family=Quicksand&family=Work+Sans&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <meta name="description" content="A simple website">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css"/>
+  <link rel="stylesheet" href="Style.css">
+  
+    </head>
+    <body>
+
+      <header>
+        <a href="Bulgaria.html" class="brand">Travel</a>
+          <div class="menu-btn"></div>
+          <div class="navigation">
+           <div class="navigation-item">
+             <a href="HomeB.html">Home</a>
+             <a href="About.html">Countryside</a>
+             <a href="Culture.html">Culture</a>
+             <a href="Tradition.html">Traditions</a>
+             <a href="contact.html">Contact</a>
+             </header>
+            <video autoplay muted loop id="myVideo">
+              <source src="Boat.mp4" type="video/mp4">
+        </video>
+        <br><br><br>   
+         <section class="gmap">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d187672.64514957392!2d23.159136799570682!3d42.69556636921362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40aa8682cb317bf5%3A0x400a01269bf5e60!2sSofia%2C%20Bulgaria!5e0!3m2!1sen!2suk!4v1697191158416!5m2!1sen!2suk"></iframe>
+        </section>
+
+  
+     <!--Contact Details-->
+     <section class="contact-details">
+      <div class="contact-form">
+        <form action="" method="post">
+          <label for="c_name">
+            Name:
+            <input type="text" name="c_name" id="c_name" placeholder="Name">
+          </label>
+          <label for="c_email">
+            Email:
+            <input type="email" name="c_email" id="c_email" placeholder="Email">
+          </label>
+        <label for="c_phone">
+            Phone:
+            <input type="tel" name="c_phone" id="c_phone" placeholder="Phone">
+          </label>
+         
+          <label for="c_message"> 
+            Message:
+            <textarea name="c_message" id="c_message" cols="30" rows="5"></textarea>
+          </label>
+          <button type="submit">Send Message</button>
+  
+        </form>
+      </div>
+      <div class="time-contact">
+        <h5>Timings:</h5>
+        <p><strong>Mon - Friday</strong> <time datetime="09:00">9:00AM</time>-<time datetime="17:00">5:00PM</time></p>
+      <hr>
+      <h5>Contact:</h5>
+      <p><a href="mailto:masha09lambova@gmail.com">masha09lambova@gmail.com</a></p>
+      </div>
+    </section>
+
+  </div>
+      <div class="footer-widget1">
+        <a style="color: white"  href="  https://twitter.com/Bulgaria"> <i class="fa-brands fa-square-twitter"></i></a>
+        <a style="color:white" href="https://www.facebook.com/groups/533171097219303/?hoisted_section_header_type=recently_seen&multi_permalinks=1535475850322151">  <i class="fa-brands fa-facebook"></i></a>
+            <a style="color: white" href="https://www.youtube.com/watch?v=HDrCvMnY6p0"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+  
+      <!--Footer widgets-->
+      <!--Size footer-->
+      <footer class="site-footer">
+        <p><small>Copyright &copy; 2022-2023 Bulgaria tourism guide. Bulgaria in Europe.</small></p>
+      </footer>
+      <!--Size footer-->
+      </div>
+      <script type="text/javascript">
+        //Javascript of responsive navigation menu 
+        const menuBtn = document.querySelector(".menu-btn");
+        const navigation = document.querySelector(".navigation");
+        
+        menuBtn.addEventListener("click", () => {
+          menuBtn.classList.toggle("active");
+          navigation.classList.toggle("active");
+  });
+
+</script>
+</body>
+</html>
